@@ -4,7 +4,8 @@
  * main - Entry point
  *
  * Discreption: using sizeof to pring the size of various types.
- * return:Always 0 (succes)
+ *
+ * Return: Always 0 (succes)
  */
 int main(void)
 {
