@@ -6,7 +6,7 @@
  * Description: print 0-9 using putchar
  *		while using int variable
  *
- * Return:Always  0(success)
+ * Return: Always  0(success)
  */
 int main(void)
 {
@@ -14,11 +14,11 @@ int main(void)
 
 	while (digit <= 9)
 	{
-		/**convert digits to ascii*/
+		/**convert digits to ASCII representation*/
 		putchar(digit + '0');
 		digit++;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
