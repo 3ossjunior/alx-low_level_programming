@@ -30,9 +30,9 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			dig2++;
+			dig2 += 1;
 		}
-		dig1++;
+		dig1 += 1;
 	}
 	putchar('\n');
 
