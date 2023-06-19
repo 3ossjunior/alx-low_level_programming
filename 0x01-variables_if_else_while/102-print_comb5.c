@@ -3,37 +3,36 @@
 /**
  * main - Entry point
  *
- * Description: print all possible different
- * combinations of two digits.
+ * Description: program prints all possible diffrent combination of two digits
  *
  * Return: Always 0 (Success)
-*/
-
+ */
 int main(void)
-{       
-        int digit1 = 0, digit2;
-        
-        while (digit1 <= 9)
-        {
-                digit2 = 0;
-                while (digit2 <= 9)
-                {       
-                        if (digit1 != digit2 && digit1 < digit2)
-                        {
-                                putchar(digit1 + 48);
-                                putchar(digit2 + 48);
-
-                                if (digit1 + digit2 != 17)
-                                {
-                                        putchar(',');
-                                        putchar(' ');
-                                }
-                        }
-                        digit2++;
-                }
-                digit1++;
-        }
-        putchar('\n');
-
-        return (0);
+{
+int firstdigit = 0, secondDigit;
+while (firstdigit <= 99)
+{
+secondDigit = firstdigit;
+while (secondDigit <= 99)
+{
+if (secondDigit != firstdigit)
+{
+putchar((firstdigit / 10) + 48);
+putchar((firstdigit % 10) + 48);
+putchar(' ');
+putchar((secondDigit / 10) + 48);
+putchar((secondDigit % 10) + 48);
+if (firstdigit != 98 || secondDigit != 99)
+{
+	putchar(',');
+	putchar(' ');
 }
+}
+secondDigit++;
+}
+firstdigit++;
+}
+putchar('\n');
+return (0);
+}
+
