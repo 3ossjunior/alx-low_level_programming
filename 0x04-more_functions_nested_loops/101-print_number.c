@@ -20,3 +20,18 @@ void print_number(int n)
 		print_number(num / 10);
 		_putchar((num % 10) + 48);
 }
+
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(void)
+{
+	void print_number(n);
+
+	return (0);
+}
+

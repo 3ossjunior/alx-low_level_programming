@@ -3,7 +3,7 @@
 /**
  * print_diagonal - draws a diagonal line on the terminal
  *
- * @n:  is the number of times the character \
+ * @n:  is the number of times the character 
 */
 
 void print_diagonal(int n)
