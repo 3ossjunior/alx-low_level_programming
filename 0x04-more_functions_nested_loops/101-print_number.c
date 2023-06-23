@@ -22,16 +22,4 @@ void print_number(int n)
 }
 
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
-*/
-
-int main(void)
-{
-	void print_number(int n);
-
-	return (0);
-}
 
