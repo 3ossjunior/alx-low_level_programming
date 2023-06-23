@@ -30,7 +30,7 @@ void print_number(int n)
 
 int main(void)
 {
-	void print_number(n);
+	void print_number(int n);
 
 	return (0);
 }
