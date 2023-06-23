@@ -22,6 +22,7 @@ double _sqrt(double x)
 	}
 	return (sqrt);
 }
+
 /**
  * largest_prime_factor - find and prints the largest
  * prime factor of number (num)
@@ -37,7 +38,7 @@ void largest_prime_factor(long int num)
 
 	for (pn = 3; pn <= _sqrt(num); pn += 2)
 	{
-	while (num % pn == 0)
+		while (num % pn == 0)
 		{
 		num = num / pn;
 		la = pn;
@@ -45,8 +46,9 @@ void largest_prime_factor(long int num)
 	}
 	if (num > 2)
 	la = num;
-	 printf("%d", la);
+	printf("%d", la);
 }
+
 /**
  * main - Entry point
  *
