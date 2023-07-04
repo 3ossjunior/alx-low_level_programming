@@ -6,28 +6,28 @@
  * @accept: string to match
  * Return: pointer to the byte in s that matches one of the bytes
  * in accept or null if no such byte is found
- */
+*/
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
+	int itr, jtr;
 	char *p;
 
-	i = 0;
-		while (s[i] != '\0')
+	itr = 0;
+	while (s[itr] != '\0')
 	{
-			j = 0;
-			while (accept[j] != '\0')
+		jtr = 0;
+		while (accept[jtr] != '\0')
+		{
+			if (accept[jtr] == s[itr])
 			{
-			if (accept[j] == s[i])
-			{
-			p = &s[i];
-			return (p);
+				p = &s[itr];
+				return (p);
 			}
-			j++;
+			jtr++;
 		}
-		i++;
+		itr++;
 	}
 
-	return (0);
+return (0);
 }
