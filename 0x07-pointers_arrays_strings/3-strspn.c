@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * _strspn - gets the length of a prefix substance
+ * _strspn - Entry point
  *
- * @s: string
- * @accept: bytes
- * Return: unsigned int
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
+	unsigned int itr, jtr;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (itr = 0; s[itr] != '\0'; itr++)
 	{
-		for (j = 0; accept[j] != s[i]; j++)
+		for (jtr = 0; accept[jtr] != s[itr]; jtr++)
 		{
-			if (accept[j] == '\0')
-				return (i);
+			if (accept[jtr] == '\0')
+			return (itr);
 		}
 	}
-	return (i);
+	return (itr);
 }
